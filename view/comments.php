@@ -7,7 +7,7 @@
 				<input type="submit" value="Saada"> </form>';
 		}
 
-		public static function CommentsForm(){
+		public static function CommentsByNews($arr){
 			if($arr!=null) {
 				echo '<table id="ctable"><th>Kommentaar</th><th>Kuupaev</th>';
 				foreach($arr as $value){

@@ -36,11 +36,16 @@ class Controller {
 	}
 
 	//список комментариев
-	public static function Comments($newsId){
+	public static function Comments($newsid){
 		$arr = Comments::getCommentByNewsID($newsid);
 		ViewComments::CommentsByNews($arr);
 	}
 	//количество коментариев к новости
+	public static function CommentsCount($newsid){
+		$arr = Comments::getCommentsCountByNewsID($newsid);
+		ViewComments::CommentsCount($arr);
+	}
+	// ссылка - переход к списку коментариев
 	public static function CommentsCountWithAncor($newsid){
 		$arr = Comments::getCommentsCountByNewsID($newsid);
 		ViewComments::CommentsCountWithAncor($arr);

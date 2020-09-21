@@ -6,7 +6,7 @@
 	ViewNews::ReadNews($n);
 
 	echo "<br>";
-	Controller::Comments($_GET['id'])
+	Controller::Comments($_GET['id']);
 
 	echo "<br>";
 	ViewComments::CommentsFrom();
