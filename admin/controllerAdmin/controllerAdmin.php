@@ -25,5 +25,3 @@
 		}
 	}//end class
 ?>
-
-			<!-- MVC3 admin/viewAdmin/formLogin.php -->

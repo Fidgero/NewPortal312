@@ -1,6 +1,7 @@
 <?php 
 $host = explode('?', $_SERVER['REQUEST_URI'])[0];
-$num=substr_count($host,'/')[$num];
+$num=substr_count($host,'/');
+$path = explode('/', $host)[$num];
 
 if ($path == '' OR $path == 'index.php' )
 {
@@ -8,7 +9,7 @@ if ($path == '' OR $path == 'index.php' )
 	$response = controllerAdmin::formLoginSite();
 }
 //----- Вход -----
-elsif ($path = 'login')
+elseif ($path = 'login')
 {
 	// Форма входа
 	$response = controllerAdmin::loginAction();

@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -19,6 +19,7 @@
 			</li>
 			<li><a href="testError">Info</a></li>
 			<li><a href="./">Stardileht</a></li>
+			<li><a href="registerForm">Register</a></li>
 		</ul>
 	</nav>
 	<section>
