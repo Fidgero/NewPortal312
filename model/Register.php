@@ -15,7 +15,7 @@ class Register{
 			if (!$password || !$confirm || mb_strlen($password) < 6){
 				$errorString.="Пароль должен быть больше 6 символов <br />";
 			}
-			if($password!=confirm){
+			if($password!=$confirm){
 				$errorString.="Пароли не совподают<br />";
 			}
 			if(mb_strlen($errorString)==0){
